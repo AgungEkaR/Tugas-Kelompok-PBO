@@ -58,10 +58,10 @@ public class Inventory implements Storable {
     @Override
     public void tampilkanItem() {
         if (itemMap.isEmpty()) {
-            System.out.println("\nInventaris kosong.");
+            System.out.println("\nInventory kosong.");
             return;
         }
-        System.out.println("\nDaftar Item dalam Inventaris:");
+        System.out.println("\nDaftar Item dalam Inventory:");
         for (Map.Entry<String, Integer> entry : itemMap.entrySet()) {
             System.out.println("- " + entry.getKey() + ": " + entry.getValue());
         }
